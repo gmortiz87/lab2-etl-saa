@@ -8,9 +8,9 @@ Este proyecto implementa un pipeline de **Extracción, Transformación y Carga (
 ├── data/
 │   ├── raw/             # Archivos CSV originales (fuente)
 │   └── processed/       # Dataset final limpio y transformado
-├── notebooks/           # Jupyter Notebooks con el flujo de trabajo final
+├── notebooks/           # Jupyter Notebooks
 ├── .venv/               # Entorno virtual 
-└── README.md            # Documentación y Sustentación Técnica
+└── README.md            # Documentación
 ```
 
 
