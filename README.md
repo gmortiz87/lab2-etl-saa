@@ -25,7 +25,7 @@ Se abordaron rigurosamente los problemas de calidad en los 2,545 registros fuent
 * **Fuga de Información (Data Leakage):** Previo al salto al algoritmo, se purgaron características que representaban fraude analítico (info post-compra) como `selected_plan` y `preferred_plan_before_conversion`.
 
 ## 3. Feature Engineering (Variables Derivadas Finales)
-Al set de datos limpio se le integraron nuevas métricas representativas en el negocio:
+Al dataset de datos limpios se le integraron nuevas métricas representativas:
 1. `sessions_per_active_day`: Frecuencia de acceso (`sessions_count` / `days_active_trial`).
 2. `total_usage_minutes`: Estimación total de uso temporal en la plataforma.
 3. `trial_engagement_ratio`: Proporción de días activos sobre el gran total de días del trial.
