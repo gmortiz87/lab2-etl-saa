@@ -1,6 +1,6 @@
 # Laboratorio No. 2: ETL y Predicción de Conversión SaaS
 
-Este proyecto implementa un pipeline de **Extracción, Transformación y Carga (ETL)** y un modelo de **Regresión Logística** para predecir la conversión de usuarios de un periodo de prueba (*trial*) a planes de pago en una plataforma SaaS.
+Este proyecto implementa un pipeline de **Extracción, Transformación y Carga (ETL)** y un modelo de **Regresión Logística** para predecir la conversión de usuarios de un periodo de prueba a planes de pago en una plataforma SaaS.
 
 ---
 ## Estructura del Directorio de Proyecto
@@ -8,9 +8,9 @@ Este proyecto implementa un pipeline de **Extracción, Transformación y Carga (
 ├── data/
 │   ├── raw/             # Archivos CSV originales (fuente)
 │   └── processed/       # Dataset final limpio y transformado
-├── notebooks/           # Jupyter Notebooks con el flujo de trabajo final
+├── notebooks/           # Jupyter Notebooks
 ├── .venv/               # Entorno virtual 
-└── README.md            # Documentación y Sustentación Técnica
+└── README.md            # Documentación
 ```
 
 
@@ -25,7 +25,7 @@ Se abordaron rigurosamente los problemas de calidad en los 2,545 registros fuent
 * **Fuga de Información (Data Leakage):** Previo al salto al algoritmo, se purgaron características que representaban fraude analítico (info post-compra) como `selected_plan` y `preferred_plan_before_conversion`.
 
 ## 3. Feature Engineering (Variables Derivadas Finales)
-Al set de datos limpio se le integraron nuevas métricas representativas en el negocio:
+Al dataset de datos limpios se le integraron nuevas métricas representativas:
 1. `sessions_per_active_day`: Frecuencia de acceso (`sessions_count` / `days_active_trial`).
 2. `total_usage_minutes`: Estimación total de uso temporal en la plataforma.
 3. `trial_engagement_ratio`: Proporción de días activos sobre el gran total de días del trial.
